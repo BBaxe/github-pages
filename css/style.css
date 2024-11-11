@@ -1,17 +1,145 @@
-/*
-    
-    INSTRUCTIONS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    Using CSS properties alone, recreate this button: 
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
 
-        https://i.imgur.com/gnZnY.png. 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
 
-    Spend no longer than 15 minutes on it, we don't 
-    expect it to be a perfect match. It's open book, 
-    feel free to hit Google but be prepared to 
-    explain your solution.
+header .logo {
+    font-size: 1.5em;
+}
 
-*/
-a {
-    
+header .logo img {
+    height: 40px;
+    width: auto;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero sectie */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #e0eaf4 url('https://coderkube.com/wp-content/uploads/2017/08/banner-portfolio-design-agency-leicester.jpg') no-repeat center center / cover;
+    color: #ffd;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.hero-bg {
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.hero .buttons .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .buttons .button:hover {
+    background-color: #555;
+}
+
+.cards-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cards-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+.card span {
+    display: block;
+    margin: 10px 0;
+}
+
+.card .button {
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card .button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
 }
